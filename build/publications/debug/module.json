@@ -1,0 +1,73 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.ebs.plugins",
+    "module": "localizations-kt",
+    "version": "0.0.3-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.localToProject": "public",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "files": [
+        {
+          "name": "localizations-kt-0.0.3-SNAPSHOT.jar",
+          "url": "localizations-kt-0.0.3-SNAPSHOT.jar",
+          "size": 4009,
+          "sha512": "929f266de63a50faf9309656251f9852df6bb4a1ca5506e079b0bfea6b2d975bf7c4daec752820160f644e71c3dc46da98325bd820ffabdbc7294fcca3a6427b",
+          "sha256": "846c6eb9604b74971836da17ca08f6988cec2ceec7933d346b27ce341b2ac28a",
+          "sha1": "fa9ca785172864cb130b7a7fe9e7a75ecad77915",
+          "md5": "f989b821553d423e8536402c82b25445"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.localToProject": "public",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "1.5.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "localizations-kt-0.0.3-SNAPSHOT.jar",
+          "url": "localizations-kt-0.0.3-SNAPSHOT.jar",
+          "size": 4009,
+          "sha512": "929f266de63a50faf9309656251f9852df6bb4a1ca5506e079b0bfea6b2d975bf7c4daec752820160f644e71c3dc46da98325bd820ffabdbc7294fcca3a6427b",
+          "sha256": "846c6eb9604b74971836da17ca08f6988cec2ceec7933d346b27ce341b2ac28a",
+          "sha1": "fa9ca785172864cb130b7a7fe9e7a75ecad77915",
+          "md5": "f989b821553d423e8536402c82b25445"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+/Users/iuliannazarian/Desktop/localizations-kt/build/classes/kotlin/main/com/ebs/plugins/LocalizationsKtPlugin$Companion.class:/Users/iuliannazarian/Desktop/localizations-kt/build/classes/kotlin/main/com/ebs/plugins/LocalizationsKtPlugin.class

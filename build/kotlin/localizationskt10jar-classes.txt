@@ -1,0 +1,1 @@
+/Users/pavelproda/localizations-gradle-plugin/build/classes/kotlin/main/com/ebs/plugins/LocalizationsKtPlugin$Companion.class:/Users/pavelproda/localizations-gradle-plugin/build/classes/kotlin/main/com/ebs/plugins/LocalizationsKtPlugin.class

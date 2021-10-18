@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata modelVersion="1.1.0">
+  <groupId>com.ebs.plugins</groupId>
+  <artifactId>localizations-kt</artifactId>
+  <version>0.0.3-SNAPSHOT</version>
+  <versioning>
+    <snapshot>
+      <timestamp>20211018.092235</timestamp>
+      <buildNumber>2</buildNumber>
+    </snapshot>
+    <lastUpdated>20211018092235</lastUpdated>
+    <snapshotVersions>
+      <snapshotVersion>
+        <extension>module</extension>
+        <value>0.0.3-20211018.092235-2</value>
+        <updated>20211018092235</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <extension>jar</extension>
+        <value>0.0.3-20211018.092235-2</value>
+        <updated>20211018092235</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <extension>pom</extension>
+        <value>0.0.3-20211018.092235-2</value>
+        <updated>20211018092235</updated>
+      </snapshotVersion>
+    </snapshotVersions>
+  </versioning>
+</metadata>
