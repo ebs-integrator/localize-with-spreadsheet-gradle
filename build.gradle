@@ -28,6 +28,7 @@ version '1.0'
 
 pluginBundle {
     website = 'https://ebs-integrator.com/'
+    vcsUrl = 'https://github.com/ebs-integrator/localize-with-spreadsheet-gradle.git'
     tags = ['localizations', 'android']
 }
 
