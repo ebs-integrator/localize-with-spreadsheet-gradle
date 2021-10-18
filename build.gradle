@@ -1,0 +1,72 @@
+plugins {
+    id 'org.jetbrains.kotlin.jvm' version '1.5.10'
+    id 'java-gradle-plugin'
+    id 'maven-publish'
+
+    id 'com.gradle.plugin-publish' version '0.14.0'
+}
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib"
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+
+group 'com.ebs.plugins'
+version '1.0'
+
+pluginBundle {
+    website = 'https://ebs-integrator.com/'
+    tags = ['localizations', 'android']
+}
+
+gradlePlugin {
+    plugins {
+        greetingsPlugin {
+            id = 'com.ebs.plugins.localizations-kt'
+            displayName = 'Android - Localize with Spreadsheet'
+            description = 'A gradle plugin to use localize-with-spreadsheet'
+            implementationClass = 'com.ebs.plugins.LocalizationsKtPlugin'
+        }
+    }
+}
+
+task sourceJar(type: Jar) {
+    classifier "sources"
+}
+
+// needs nexus sonatype setups...
+/*afterEvaluate {
+    publishing {
+        publications {
+            debug(MavenPublication) {
+                groupId = 'com.ebs.plugins'
+                artifactId = 'localizations-kt'
+                version = '0.0.3-SNAPSHOT'
+                from components.java
+            }
+        }
+
+          repositories {
+              maven {
+                  setAllowInsecureProtocol(true)
+                  url = "http://localhost:8081/repository/localizations-kt/"
+                  credentials {
+                      username = "admin"
+                      password = "Github9!qweasd"
+                  }
+              }
+          }
+    }
+}*/

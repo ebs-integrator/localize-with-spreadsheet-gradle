@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.ebs.plugins.localizations-kt</groupId>
+  <artifactId>com.ebs.plugins.localizations-kt.gradle.plugin</artifactId>
+  <versioning>
+    <latest>0.0.3-SNAPSHOT</latest>
+    <release>0.0.1</release>
+    <versions>
+      <version>0.0.1</version>
+      <version>0.0.3-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20211018112107</lastUpdated>
+  </versioning>
+</metadata>
