@@ -1,8 +1,7 @@
 plugins {
-    id 'org.jetbrains.kotlin.jvm' version '1.5.10'
+    id 'org.jetbrains.kotlin.jvm' version '1.5.31'
     id 'java-gradle-plugin'
     id 'maven-publish'
-
     id 'com.gradle.plugin-publish' version '0.14.0'
 }
 
@@ -10,34 +9,43 @@ sourceCompatibility = 1.8
 
 repositories {
     mavenCentral()
+    maven { url 'https://maven.google.com' }
+    google()
 }
 
+
 dependencies {
-    implementation "org.jetbrains.kotlin:kotlin-stdlib"
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib:1.5.31'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
 }
 
 test {
     useJUnitPlatform()
 }
 
+compileKotlin {
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+}
 
-group 'com.ebs.plugins'
+group 'com.ebsintegrator.plugins'
 version '1.0'
 
 pluginBundle {
-    website = 'https://ebs-integrator.com/'
-    tags = ['localizations', 'android']
+    website = 'https://github.com/ebs-integrator/localize-with-spreadsheet-gradle'
+    vcsUrl = 'https://github.com/ebs-integrator/localize-with-spreadsheet-gradle.git'
+    tags = ['localizations', 'android', 'script', 'spreadsheet']
 }
 
 gradlePlugin {
     plugins {
         greetingsPlugin {
-            id = 'com.ebs.plugins.localizations-kt'
+            id = 'com.ebs-integrator.plugins.localizations-kt'
             displayName = 'Android - Localize with Spreadsheet'
-            description = 'A gradle plugin to use localize-with-spreadsheet'
-            implementationClass = 'com.ebs.plugins.LocalizationsKtPlugin'
+            description = 'A gradle plugin to use localize-with-spreadsheet script as a task in an Android Project'
+            implementationClass = 'com.ebsintegrator.plugins.LocalizationsKtPlugin'
         }
     }
 }
@@ -45,28 +53,3 @@ gradlePlugin {
 task sourceJar(type: Jar) {
     classifier "sources"
 }
-
-// needs nexus sonatype setups...
-/*afterEvaluate {
-    publishing {
-        publications {
-            debug(MavenPublication) {
-                groupId = 'com.ebs.plugins'
-                artifactId = 'localizations-kt'
-                version = '0.0.3-SNAPSHOT'
-                from components.java
-            }
-        }
-
-          repositories {
-              maven {
-                  setAllowInsecureProtocol(true)
-                  url = "http://localhost:8081/repository/localizations-kt/"
-                  credentials {
-                      username = "admin"
-                      password = "Github9!qweasd"
-                  }
-              }
-          }
-    }
-}*/

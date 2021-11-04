@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metadata>
-  <groupId>com.ebs.plugins</groupId>
+  <groupId>com.ebsintegrator.plugins</groupId>
   <artifactId>localizations-kt</artifactId>
   <versioning>
     <latest>1.0</latest>
@@ -8,6 +8,6 @@
     <versions>
       <version>1.0</version>
     </versions>
-    <lastUpdated>20211018141231</lastUpdated>
+    <lastUpdated>20211104100952</lastUpdated>
   </versioning>
 </metadata>

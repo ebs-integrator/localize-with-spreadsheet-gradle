@@ -1,6 +1,6 @@
 # localizations-gradle-plugin
 
-This is a Gradle project to install the localize-with-spreadsheet configurations in our projects.
+This is a Gradle project to install the localize-with-spreadsheet configurations in our projects and create a gradle  task to update localizations from a Google spreadsheet.
 
 ## Publishing the plugin
 
@@ -15,6 +15,8 @@ This is a Gradle project to install the localize-with-spreadsheet configurations
 ## Applying the plugin
 
 > The below steps must be applied to the top-level build.gradle file.
+> 
+> Node.js must me installed to use this script
 
 1. Add local repository of Maven and plugin's dependency:
 
@@ -27,14 +29,20 @@ buildscript {
     }
     dependencies {
         ...
-        classpath 'com.ebs.plugins:localizations-kt:0.0.1'
+        classpath 'com.ebsintegrator.plugins:localizations-kt:1.0.0'
     }
 }
 ```
 
 2. Apply the plugin
 
-`apply plugin: 'com.ebs.plugins.localizations-kt'`
+`apply plugin: 'com.ebsintegrator.plugins.localizations-kt'`
 
-3. Run localization task: Tasks -> ebs plugins -> localizations-kt
+
+
+3. Create an `update-localization.js` file. Follow Step 1-4 instructions from: https://github.com/ebs-integrator/localize-with-spreadsheet
+
+4. Place this file into the root directory of your project
+
+5. Run localization task: Tasks -> ebs plugins -> updateLocalization
 
