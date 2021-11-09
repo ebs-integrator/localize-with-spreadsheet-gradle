@@ -29,14 +29,14 @@ buildscript {
     }
     dependencies {
         ...
-        classpath 'com.ebsintegrator.plugins:localizations-kt:1.0.0'
+        classpath 'com.ebs-integrator.plugins:localizations-kt:1.0.0'
     }
 }
 ```
 
 2. Apply the plugin
 
-`apply plugin: 'com.ebsintegrator.plugins.localizations-kt'`
+`apply plugin: 'com.ebs-integrator.plugins.localizations-kt'`
 
 
 

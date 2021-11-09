@@ -30,7 +30,7 @@ compileKotlin {
     }
 }
 
-group 'com.ebsintegrator.plugins'
+group 'com.ebs-integrator'
 version '1.0'
 
 pluginBundle {
